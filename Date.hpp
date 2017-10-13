@@ -17,10 +17,13 @@ class Date{
 	~Date();
 
 private:
-	friend operator <<();
-	friend operator >>();
+	friend ostream& operator <<(ostream&, const Date&);
+	friend istream& operator >>(oistream&, Date&);
 	Date operator +();
 	Date operator -();
+	Date operator =();
+	Date operator !=();
+	Date operator ==();
 };
 
 
