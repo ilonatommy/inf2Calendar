@@ -29,7 +29,10 @@ public:
 	Date operator -(const Date& D); //D-D
 	Date operator -(const int& n); //D-n
 	
-	Date & operator =(const Date & D);
+	Date& operator +=(const Date& D);
+	Date& operator -=(const Date& D);
+	Date& operator =(const Date& D);
+	
 	bool operator== (const Date& D);
 	bool operator!=(const Date& D);
 
