@@ -1,4 +1,4 @@
-/*
+ /*
  * Date.hpp
  *
  *  Created on: 13 Oct 2017
@@ -19,10 +19,16 @@ public:
 	Date(const Date & D);
 	~Date();
 
-	friend ostream& operator <<(ostream&, const Date&);
-	friend istream& operator >>(istream&, Date&);
-	friend Date operator -(const Date & D, int n);	//friend aby mo¿liwe by³y operacje D+n oraz n+D
-	Date operator -(const Date & D);
+	friend ostream& operator <<(ostream& os, const Date&);
+	friend istream& operator >>(istream& is, Date&);
+	
+	friend Date operator +(int& n, const Date& D);	//friend aby moÂ¿liwe byÂ³y operacje n+D
+	Date operator +(const Date& D); //D+D
+	Date operator +(const int& n); //D+n
+	
+	Date operator -(const Date& D); //D-D
+	Date operator -(const int& n); //D-n
+	
 	Date & operator =(const Date & D);
 	bool operator== (const Date& D);
 	bool operator!=(const Date& D);
