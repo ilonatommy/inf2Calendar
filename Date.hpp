@@ -16,15 +16,14 @@ private:
 	int day;
 public:
 	Date(year = 1970, month = 1, day = 1);
-	Date(const Date & d);
+	Date(const Date & D);
 	~Date();
 
-
 	friend ostream& operator <<(ostream&, const Date&);
-	friend istream& operator >>(oistream&, Date&);
-	Date operator +();
-	Date operator -();
-	Date operator =();
+	friend istream& operator >>(istream&, Date&);
+	friend Date operator -(const Date & D, int n);	//friend aby mo¿liwe by³y operacje D+n oraz n+D
+	Date operator -(const Date & D);
+	Date & operator =(const Date & D);
 	bool operator== (const Date& D);
 	bool operator!=(const Date& D);
 
