@@ -8,3 +8,7 @@ Date::Date(int _year = 1970, int _month = 1, int _day = 1)
 };
 
 
+
+#include <iostream> 
+#include Date.hpp
+  
