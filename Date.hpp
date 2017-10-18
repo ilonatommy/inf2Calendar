@@ -7,8 +7,10 @@
 
 #ifndef DATE_HPP_
 #define DATE_HPP_
-#include <iostream>
-using namespace std;
+#include <iostream> 
+
+//nie stosujemy using namespace
+
 class Date{
 private:
 	int year;
@@ -19,7 +21,7 @@ public:
 	Date(const Date & D);
 	~Date();
 
-	friend ostream& operator <<(ostream& os, const Date&);
+	friend std::ostream& operator <<(std::ostream& os, const Date&);
 	
 	friend Date operator +(int& n, const Date& D);	//friend aby mo¿liwe by³y operacje n+D i D+n
 	Date operator +(const Date& D); //D+D
