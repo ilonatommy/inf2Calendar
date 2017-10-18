@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>inf2Calender</name>
+=======
+	<name>Date.cpp</name>
+>>>>>>> branch 'master' of https://github.com/ilonatommy/inf2Calender.git
 	<comment></comment>
 	<projects>
 	</projects>
