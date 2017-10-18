@@ -16,6 +16,8 @@ private:
 	int year;
 	int month;
 	int day;
+	
+	int monthLenghts[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
 public:
 	Date(year = 1970, month = 1, day = 1);
 	Date(const Date & D);
@@ -37,8 +39,6 @@ public:
 	bool operator!=(const Date& D);
 
 };
-
-
 
 
 #endif /* DATE_HPP_ */
