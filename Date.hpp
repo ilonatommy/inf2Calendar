@@ -19,9 +19,8 @@ private:
 	
 	int monthLenghts[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
 public:
-	Date(year = 1970, month = 1, day = 1);
+	Date(int _year = 1970,int _month = 1,int _day = 1);
 	Date(const Date & D);
-	~Date();
 
 	friend std::ostream& operator <<(std::ostream& os, const Date&);
 	
