@@ -17,8 +17,6 @@ private:
 	int year;
 	int month;
 	int day;
-	
-	int monthLenghts[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
 
 public:
 	Date(int _year = 1970,int _month = 1,int _day = 1);
