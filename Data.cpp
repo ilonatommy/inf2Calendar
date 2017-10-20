@@ -49,12 +49,19 @@ const std::array<const int, 12> monthsLength = {
 			else break;
 		}
 		Date date;
-		date.year = years;
-		date.month = months;
-		date.day = days;
+		date.year = years + 1970;
+		date.month = months; //dodawać 1 czy nie?
+		date.day = days; //?
 		
 		return &date;
 }
 
-
-  
+Date operator +(int& n, const Date& D)
+{
+	Date sumDates;
+	int dDays = dateToDays(D);
+	int sumDays = dDays + n;
+	sumDates = daysToDate(sumDays);
+	
+	return sumDates;
+}
