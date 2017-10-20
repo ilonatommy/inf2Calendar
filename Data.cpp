@@ -1,5 +1,4 @@
 #include "Date.hpp"
-#include <iostream>
 
 const std::array<const int, 12> monthsLength = {
     		31, // Jan
