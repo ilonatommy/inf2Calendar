@@ -1,3 +1,4 @@
+
 #include "Date.hpp"
 #include <iostream>
 
@@ -25,7 +26,7 @@ const std::array<const int, 12> monthsLength = {
 		day=_day;
 	};
 
-	static int dateToDays(const Date& date)
+	int dateToDays(const Date& date)
 	{
 		int years = date.year - 1970;
 		int months = date.month - 1;
@@ -35,9 +36,24 @@ const std::array<const int, 12> monthsLength = {
 		
 		return days;
 	}
-
 	
-
+	Date& daysToDate(int days)
+	{
+		int years = days / 365;
+		days -= 365 * years;
+		int months;
+		for(months = 1; months <= 12; months++)
+		{
+			if(days - monthsLength[months] > 0)
+				days -= monthsLength[months];
+			else break;
+		}
+		Date date;
+		date.year = years;
+		date.month = months;
+		date.day = days;
+		
+		return &date;
 }
 
 
