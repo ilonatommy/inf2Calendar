@@ -76,7 +76,7 @@ Date Date::operator -(const Date& D)
 	return 0;
 }
 
-Date operator -(const int& n)
+Date Date::operator -(const int& n)
 {
 	int days = dateToDays(this);
 	if(days > n)
