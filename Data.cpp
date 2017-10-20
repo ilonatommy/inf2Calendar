@@ -30,7 +30,7 @@ const std::array<const int, 12> monthsLength = {
 	{
 		int years = date.year - 1970;
 		int months = date.month - 1;
-		int days = date.day - 1;
+		int days = date.day; //bo 1970.01.01 daje jeden dzień - przyjmuję to za wartość początkową kalendarza
 		days += 365 * years;
 		days += monthsLength[date.month - 1] * months;
 		
@@ -50,8 +50,8 @@ const std::array<const int, 12> monthsLength = {
 		}
 		Date date;
 		date.year = years + 1970;
-		date.month = months; //dodawać 1 czy nie?
-		date.day = days; //?
+		date.month = months;
+		date.day = days;
 		
 		return &date;
 }
