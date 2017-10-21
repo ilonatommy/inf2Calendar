@@ -17,22 +17,24 @@ private:
 	int year;
 	int month;
 	int day;
+	int dateToDays(const Date& date)
 
 public:
 	Date(int _year = 1970,int _month = 1,int _day = 1);
 	Date(const Date & D);
 
 	friend std::ostream& operator <<(std::ostream& os, const Date&);
+	friend int dateToDays(const Date& date);
+	friend Date& daysToDate(int days, Date& date);
 	
-	friend Date operator +(int& n, const Date& D);	//friend aby mo¿liwe by³y operacje n+D i D+n
+	friend Date operator +(int& n, const Date& D);	//friend aby moÂżliwe byÂły operacje n+D i D+n
 	Date operator +(const Date& D); //D+D
 	
 	Date operator -(const Date& D); //D-D
 	Date operator -(const int& n); //D-n
 	
-	Date& operator +=(const Date& D);
-	Date& operator -=(const Date& D);
-	Date& operator =(const Date& D);
+	Date& operator +=(const int& n);
+	Date& operator -=(const int& n);
 	
 	bool operator== (const Date& D);
 	bool operator!=(const Date& D);
