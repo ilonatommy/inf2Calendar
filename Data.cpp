@@ -117,3 +117,17 @@ Date& Date::operator -=(const int& n)
 		else cout<<"error, range violation"<<endl;
 		return *this;
 };
+
+bool Date::operator ==(const Date& D)
+{
+	if(year!=D.year || month!=D.month || day!=D.day)
+		return false;
+	return true;
+};
+
+bool Date::operator !=(const Date& D)
+{
+	if(year==D.year && month==D.month && day==D.day)
+		return false;
+	return true;
+};
