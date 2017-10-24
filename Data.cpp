@@ -120,6 +120,8 @@ Date& Date::operator -=(const int& n)
 
 bool Date::operator ==(const Date& D)
 {
+	if(this == &D)
+		return true;
 	if(year!=D.year || month!=D.month || day!=D.day)
 		return false;
 	return true;
@@ -127,6 +129,8 @@ bool Date::operator ==(const Date& D)
 
 bool Date::operator !=(const Date& D)
 {
+	if(this == &D)
+		return false;
 	if(year==D.year && month==D.month && day==D.day)
 		return false;
 	return true;
