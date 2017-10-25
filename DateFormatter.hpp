@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 class DateFormatter{
-  virtual getFormat();
+  	virtual getFormat();
 	virtual setFormat();
   
 }
