@@ -2,6 +2,9 @@
 #ifndef DATEFORMATTER_HPP_
 #define DATEFORMATTER_HPP_
 #include <iostream>
+#include <sstream>
+#include <iomanip>
+#include <string>
 using namespace std;
 class DateFormatter{
   	virtual std::string format(const Date& d) const = 0;  
