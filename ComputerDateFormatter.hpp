@@ -1,4 +1,3 @@
-class ComputerDateFormatter{
-  DateFormatter descendant;
-  
+class ComputerDateFormatter: public DateFormatter{
+    
 }
