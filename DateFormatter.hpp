@@ -4,9 +4,7 @@
 #include <iostream>
 using namespace std;
 class DateFormatter{
-  	virtual int getFormat(); //code for ComputerDateFormat 0, for GermanDateFormat 1
-	virtual setFormat(int);
-  
+  	virtual std::string format(const Date& d) const = 0;  
 }
 
 
