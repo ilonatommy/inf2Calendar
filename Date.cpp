@@ -50,6 +50,10 @@ Date& daysToDate(int day,Date& date)
 		
 	return date;
 }
+std::ostream& operator <<(std::ostream& os, const Date&)
+{
+	
+}
 	
 Date Date::operator +(const Date& D)
 {
