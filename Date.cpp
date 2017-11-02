@@ -52,7 +52,12 @@ Date& daysToDate(int day,Date& date)
 }
 std::ostream& operator <<(std::ostream& os, const Date&)
 {
+	std::ostringstream date_ (std::ostringstream::ate);
+    	date_<< d.year << "-";
+	date_<< std::setfill('0') << std::setw(2) << d.month << "-";
+	date_<< std::setfill('0') << std::setw(2) << d.day;	
 	
+	return date_;
 }
 	
 Date Date::operator +(const Date& D)
