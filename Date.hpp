@@ -1,4 +1,3 @@
-
  /*
  * Date.hpp
  *
@@ -9,6 +8,9 @@
 #ifndef DATE_HPP_
 #define DATE_HPP_
 #include <iostream> 
+#include <sstream>
+#include <iomanip>
+#include <string>
 
 //nie stosujemy using namespace
 
