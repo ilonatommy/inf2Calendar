@@ -19,12 +19,15 @@ private:
 	int year;
 	int month;
 	int day;
-	int dateToDays(const Date& date)
+	int dateToDays(const Date& date);
 
 public:
 	Date(int _year = 1970,int _month = 1,int _day = 1);
 	Date(const Date & D);
-
+	
+	inline int getDay(const Date& d){return day};
+	inline int getMonth(const Date& d){return month};
+	inline int getYear(const Date& d){return year};
 	friend std::ostream& operator <<(std::ostream& os, const Date&);
 	friend int dateToDays(const Date& date);
 	friend Date& daysToDate(int days, Date& date);
