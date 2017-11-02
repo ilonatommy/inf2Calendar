@@ -56,7 +56,7 @@ std::ostream& operator <<(std::ostream& os, const Date& d)
     	date_<< d.year << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.month << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.day;	
-	cout << oss.date_() << endl; //wypisuje zawartość strumienia
+	cout << date_.str() << endl; //wypisuje zawartość strumienia
 	return os;
 	
 }
