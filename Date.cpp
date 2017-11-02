@@ -50,14 +50,15 @@ Date& daysToDate(int day,Date& date)
 		
 	return date;
 }
-std::ostream& operator <<(std::ostream& os, const Date&)
+std::ostream& operator <<(std::ostream& os, const Date& d)
 {
 	std::ostringstream date_ (std::ostringstream::ate);
     	date_<< d.year << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.month << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.day;	
+	cout << oss.date_() << endl; //wypisuje zawartość strumienia
+	return os;
 	
-	return date_;
 }
 	
 Date Date::operator +(const Date& D)
