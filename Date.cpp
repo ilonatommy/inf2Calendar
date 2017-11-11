@@ -31,7 +31,7 @@ int dateToDays(const Date& date)
 {
 	int years = date.year - 1970;
 	int months = date.month - 1;
-	int days = date.day; //bo 1970.01.01 daje jeden dzień - przyjmuję to za wartość początkową kalendarza
+	int days = date.day; //bo 1970.01.01 daje jeden dzieÅ„ - przyjmujÄ™ to za wartoÅ›Ä‡ poczÄ…tkowÄ… kalendarza
 	days += 365 * years;
 	days += monthsLength[date.month - 1] * months;
 
@@ -43,7 +43,7 @@ Date& Date::daysToDate(int days)
 	int years = days / 365;
 	days -= 365 * years;
 	int months;
-	for(months = 1; months <= 12; months++)
+	for(months = 0; months < 12; months++)
 	{
 		if(days - monthsLength[months] > 0)
 			days -= monthsLength[months];
@@ -61,7 +61,7 @@ std::ostream& operator <<(std::ostream& os, const Date& d)
     date_<< d.year << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.month << "-";
 	date_<< std::setfill('0') << std::setw(2) << d.day;
-	std::cout << date_.str() << std::endl; //wypisuje zawarto�� strumienia
+	std::cout << date_.str() << std::endl; //wypisuje zawartoœæ strumienia
 	return os;
 }
 
