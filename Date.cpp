@@ -50,7 +50,7 @@ Date& Date::daysToDate(int days)
 		else break;
 	}
 	year = years + 1970;
-	month = months;
+	month = months+1;
 	day = days;
 
 	return *this;
