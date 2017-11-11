@@ -11,7 +11,7 @@
 #include "Date.hpp"
 class ComputerDateFormatter: public DateFormatter{
 public:
-    virtual std::string format(const Date& d) const;
+    virtual std::string format(const Date d) const;
 };
 
 #endif /* COMPUTERDATEFORMATTER_HPP_ */

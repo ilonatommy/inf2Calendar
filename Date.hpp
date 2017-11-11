@@ -26,9 +26,9 @@ private:
 public:
 	Date(int _year=1970, int _month=1, int _day=1);
 
-	inline int getDay(const Date& d){return day;};
-	inline int getMonth(const Date& d){return month;};
-	inline int getYear(const Date& d){return year;};
+	inline int getDay() const{return this->day;};
+	inline int getMonth() const{return this->month;};
+	inline int getYear() const{return this->year;} ;
 	friend std::ostream& operator <<(std::ostream& os, const Date&);
 	friend int dateToDays(const Date& date);
 	Date& daysToDate(int days);

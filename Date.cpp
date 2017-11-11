@@ -31,7 +31,7 @@ int dateToDays(const Date& date)
 {
 	int years = date.year - 1970;
 	int months = date.month - 1;
-	int days = date.day; //bo 1970.01.01 daje jeden dzieÅ„ - przyjmujÄ™ to za wartoÅ›Ä‡ poczÄ…tkowÄ… kalendarza
+	int days = date.day;
 	days += 365 * years;
 	days += monthsLength[date.month - 1] * months;
 
@@ -152,6 +152,3 @@ bool Date::operator !=(const Date& D)
 		return false;
 	return true;
 };
-
-
-

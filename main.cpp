@@ -17,6 +17,3 @@ int main()
 	std::cout<<data1.format(data);
 	return 0;
 }
-
-
-

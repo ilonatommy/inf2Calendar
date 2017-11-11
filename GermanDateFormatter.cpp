@@ -5,12 +5,15 @@
  *      Author: adamg
  */
 #include "GermanDateFormatter.hpp"
-std::string GermanDateFormatter::format(const Date& d) const {
-	std::ostringstream date_(std::ostringstream::ate);
-	date_ << std::setfill('0') << std::setw(2) << d.getDay << ".";
-	date_ << std::setfill('0') << std::setw(2) << d.getMonth << ".";
-	date_ << d.getYear;
+std::string GermanDateFormatter::format(const Date d) const {
+	std::ostringstream date_;
+	date_ << std::setfill('0') << std::setw(2) <<d.getDay();
+	date_<<".";
+	date_ << std::setfill('0') << std::setw(2) << d.getMonth();
+	date_<<".";
+	date_ << d.getYear();
 	std::string str = date_.str();
 	return str;
 }
+
 

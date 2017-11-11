@@ -13,7 +13,7 @@
 class GermanDateFormatter: public DateFormatter
 {
 public:
-    virtual std::string format(const Date& d) const;
+    virtual std::string format(const Date d) const;
 };
 
 

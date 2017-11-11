@@ -12,7 +12,7 @@
 
 class DateFormatter{
 public:
-  	virtual std::string format(const Date& d) const=0;
+  	virtual std::string format(const Date d) const=0;
 };
 
 #endif /* DATEFORMATTER_HPP_ */
