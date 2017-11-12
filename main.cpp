@@ -11,9 +11,9 @@
 
 int main()
 {
-	Date data;
-	GermanDateFormatter data1;
-	std::cout<<data;
-	std::cout<<data1.format(data);
+	Date date;
+	DateFormatter* formatComp = new ComputerDateFormatter;
+	std::cout << date;
+	std::cout << formatComp->format(date);
 	return 0;
 }
