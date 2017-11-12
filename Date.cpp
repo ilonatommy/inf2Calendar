@@ -68,16 +68,6 @@ std::ostream& operator <<(std::ostream& os, const Date& d)
 	return os;
 }
 
-Date Date::operator +(const Date& D)
-{
-	int days1 = dateToDays(*this);
-	int days2 = dateToDays(D);
-	Date sum;
-	sum.daysToDate(days1+days2);
-
-	return sum;
-}
-
 int Date::operator -(const Date& D)
 {
 	int days1 = dateToDays(*this);
