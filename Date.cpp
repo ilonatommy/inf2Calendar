@@ -78,19 +78,16 @@ Date Date::operator +(const Date& D)
 	return sum;
 }
 
-Date Date::operator -(const Date& D)
+int Date::operator -(const Date& D)
 {
 	int days1 = dateToDays(*this);
 	int days2 = dateToDays(D);
 	if(days1 > days2)
 	{
-		Date subDate;
-		subDate.daysToDate(days1 - days2);
-
-		return subDate;
+		return days1-days2;
 	}
-	else std::cout<<"error, range violation"<<std::endl;
-	return 0;
+	else
+		return days2-days1;
 }
 
 Date Date::operator -(const int& n)
@@ -107,12 +104,12 @@ Date Date::operator -(const int& n)
 	return 0;
 }
 
-Date operator +(int& n, const Date& D)
+Date operator +(int n, const Date& date)
 {
 	Date sumDates;
-	int dDays = dateToDays(D);
-	int sumDays = dDays + n;
-	sumDates.daysToDate(sumDays);
+	int dDays = dateToDays(date);
+	dDays+=n;
+	sumDates.daysToDate(dDays);
 
 	return sumDates;
 }
