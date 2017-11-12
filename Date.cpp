@@ -94,7 +94,17 @@ Date Date::operator -(const int& n)
 	return 0;
 }
 
-Date operator +(int n, const Date& date)
+Date operator +(const Date& D, const int& n)
+{
+	Date sumDates;
+	int dDays = dateToDays(D);
+	dDays+=n;
+	sumDates.daysToDate(dDays);
+
+	return sumDates;
+}
+
+Date operator +(const int& n, const Date& date)
 {
 	Date sumDates;
 	int dDays = dateToDays(date);
