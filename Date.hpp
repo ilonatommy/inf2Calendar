@@ -33,8 +33,8 @@ public:
 	friend int dateToDays(const Date& date);
 	Date& daysToDate(int days);
 
-	friend Date operator +(int n, const Date& D);	//friend aby mo¿liwe by³y operacje n+D i D+n
-
+	friend Date operator +(const int& n, const Date& D);	//friend aby mo¿liwe by³y operacje n+D i D+n
+	friend Date operator +(const Date& D, const int& n);
 	int operator -(const Date& D); //D-D
 	Date operator -(const int& n); //D-n
 
