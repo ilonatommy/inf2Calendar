@@ -1,19 +1,6 @@
 #ifndef SHAPES_HPP_
 #define SHAPES_HPP_
-#include "Shape.hpp"
 
-/*class Square: public Shape{
-private:
-	double _width;
-	double _height;
-
-public:
-	virtual double getHeight() const override { return _height; }
-	double getWidth() const override { return _width; }
-	void setWidth(double width) override { _width = width; _height = width; }
-	void setHeight(double height) override { _height = height; _width = height; }
-};
-*/
 class RectangleA {
 private:
 	double _width;
