@@ -24,7 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Shapes.hpp">
+    <ClInclude Include="Shape.hpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.hpp">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
   </ItemGroup>
