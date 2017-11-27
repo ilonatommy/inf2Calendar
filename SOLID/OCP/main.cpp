@@ -37,7 +37,7 @@ public:
 	double calculateArea(const std::vector<const Shape*>& shapes){
 		double totalArea=0;
 		for(const auto shape_ptr:shapes){
-			totalArea+=Shape::area.(*shape_ptr);
+			totalArea+=Shape::area->shape_ptr;
 		}
 		return totalArea;
 	};
