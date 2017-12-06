@@ -25,3 +25,7 @@ klasa symulacja
   zadania:
   -wykonaj turę
   
+  magzayn
+   - przyjmowaniue produktów
+   - robienie raportu (do pliku)
+   
