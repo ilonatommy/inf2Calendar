@@ -22,7 +22,6 @@ dane:
    
 zadania:
    - pobranie produktu (odczyt z pliku?)
-   - tworzenie produktów (CZYM SIĘ TO RÓŻNI OD POBRANIA?, CZEMU NIE JEST TO JEDNA METODA?)
   
 klasa Symulacja (Simulation)
 
