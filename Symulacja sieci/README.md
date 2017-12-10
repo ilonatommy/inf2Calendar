@@ -31,7 +31,16 @@ klasa Symulacja
   zadania:
   - wykonaj turę
   
-  magzayn
-   - przyjmowaniue produktów
+klasa Magazyn
+   - przyjmowanie produktów
    - robienie raportu (do pliku)
+   
+klasa-interfejs Kolejka (IQueue)
+   - w pełni wirtualna metoda tworzenia kolejki
+   
+klasa kolejkaFIFO
+   - tworzenie kolejki z kontenera STL std:queue poprzez override metody z IQueue
+   
+klasa kolejkaLIFO   
+   - tworzenie kolejki LIFO (stosu) std:stack poprzez override metody z IQueue
    
