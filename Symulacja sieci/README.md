@@ -1,6 +1,6 @@
 # OPIS
 
-klasa Worker
+klasa Pracownik (Worker)
 
 dane:
    - czas pracy nad produktem
@@ -13,7 +13,7 @@ zadania:
    - przekaż produkt (do siebie, do innego robotnika)
    - umieść w magazynie
   
-klasa Rampa
+klasa Rampa (Ramp)
 
 dane:
    - produkty
@@ -23,7 +23,7 @@ zadania:
    - pobranie produktu (odczyt z pliku)
    - tworzenie produktów
   
-klasa Symulacja 
+klasa Symulacja (Simulation)
 
   dane: 
   - licznik tur
@@ -31,16 +31,18 @@ klasa Symulacja
   zadania:
   - wykonaj turę
   
-klasa Magazyn
+klasa Magazyn (Store)
+
+zadania:
    - przyjmowanie produktów
    - robienie raportu (do pliku)
    
 klasa-interfejs Kolejka (IQueue)
    - w pełni wirtualna metoda tworzenia kolejki
    
-klasa kolejkaFIFO
+klasa kolejkaFIFO (FIFO)
    - tworzenie kolejki z kontenera STL std:queue poprzez override metody z IQueue
    
-klasa kolejkaLIFO   
+klasa kolejkaLIFO (LIFO)
    - tworzenie kolejki LIFO (stosu) std:stack poprzez override metody z IQueue
    
