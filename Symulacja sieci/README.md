@@ -47,11 +47,12 @@ klasa kolejkaFIFO (FIFO)
 klasa kolejkaLIFO (LIFO)
    - tworzenie kolejki LIFO (stosu) std:stack poprzez override metody z IQueue
    
-klasa Odbiorca (Reciever) 
+klasa-interfejs IOdbiorca (Reciever) 
 
 dane:
    - preferencje (domyślnie ustawione na rozklad jednostajny, ale jest też opcja utworzenia odbiorcy ze sprecyzowanymi preferncjami)
    - 
    
-   
+zadania:
+   - utwórz odbiorcę (konstruktor)
    
