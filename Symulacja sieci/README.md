@@ -71,3 +71,7 @@ dane:
    - l.poj węzła
    - preferencje wyboru danego odbiorcy
    
+klasa Produkt
+dane:
+   - czas wykonania
+   - właściciel?
