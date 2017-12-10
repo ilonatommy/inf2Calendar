@@ -2,14 +2,14 @@
 
 klasa Worker
 dane:
-  -czas pracy nad produktem
-  -plista oidbiorców wraz z preferencjami (z pliku txt, lista struktur)
-  -kolejka produktów do wykoniania
-  -typ kolejki (określamy przy tworzeniu workera)
+   - czas pracy nad produktem
+   - lista oidbiorców wraz z preferencjami (z pliku txt, lista struktur)
+   - kolejka produktów do wykoniania
+   - typ kolejki (określamy przy tworzeniu workera)
 zadania:
-  -otrzymaj produkt
-  -przekaż produkt (do siebie, do innego robotnika)
-  -umieść w magazynie
+   - otrzymaj produkt
+   - przekaż produkt (do siebie, do innego robotnika)
+   - umieść w magazynie
   
 klasa Rampa
 dabe:
