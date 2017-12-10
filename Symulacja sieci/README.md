@@ -4,7 +4,7 @@ klasa Pracownik (Worker)
 
 dane:
    - czas pracy nad produktem
-   - lista oidbiorców wraz z preferencjami (z pliku txt, lista struktur)
+   - lista odbiorców wraz z preferencjami (z pliku txt, lista struktur)
    - kolejka produktów do wykoniania
    - typ kolejki (określamy przy tworzeniu workera)
 
@@ -16,12 +16,13 @@ zadania:
 klasa Rampa (Ramp)
 
 dane:
-   - produkty
+   - produkt
    - częstotliwość dostarczania
+   - lista odbiorców wraz z preferencjami ("Przyjmij, że na rampie pracuje osoba, która może mieć swoje preferencje…")
    
 zadania:
-   - pobranie produktu (odczyt z pliku)
-   - tworzenie produktów
+   - pobranie produktu (odczyt z pliku?)
+   - tworzenie produktów (CZYM SIĘ TO RÓŻNI OD POBRANIA?, CZEMU NIE JEST TO JEDNA METODA?)
   
 klasa Symulacja (Simulation)
 
@@ -45,4 +46,12 @@ klasa kolejkaFIFO (FIFO)
    
 klasa kolejkaLIFO (LIFO)
    - tworzenie kolejki LIFO (stosu) std:stack poprzez override metody z IQueue
+   
+klasa Odbiorca (Reciever) 
+
+dane:
+   - preferencje (domyślnie ustawione na rozklad jednostajny, ale jest też opcja utworzenia odbiorcy ze sprecyzowanymi preferncjami)
+   - 
+   
+   
    
