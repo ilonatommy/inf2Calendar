@@ -55,3 +55,19 @@ dane:
 zadania:
    - utwórz odbiorcę (konstruktor)
    
+klasa Raport (Report)  
+
+dane:
+   - częstotliwość raportowania jako array (np. gdy pusta, gdy pole ma wartość 2 to dla 2 tury), przed użyciem tablicę posortwać
+   - czas raportowania (np. gdy -1 to brak raportu, gdy 2 to co 2 turę)
+   
+zadania:   
+   - zapisz do plku raport o strukturze sieci
+   - zapisz do pliku raport o stanie symulacji
+   
+klasa Połączenie (Link)   
+dane:
+   - enum typ wezła (ramp/worker/store)
+   - l.poj węzła
+   - preferencje wyboru danego odbiorcy
+   
