@@ -7,5 +7,6 @@ private:
 public:
 	Sender();
 	~Sender();
+	send(Product*, queue&, Receiver& )
 };
 
