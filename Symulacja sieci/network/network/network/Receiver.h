@@ -4,5 +4,6 @@ class Receiver
 public:
 	Receiver();
 	~Receiver();
+	receive(Product*)
 };
 
