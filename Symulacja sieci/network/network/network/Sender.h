@@ -2,11 +2,11 @@
 class Sender
 {
 private:
-	enum queue_type 
-	IQueue queue
+	QueueType queue_type ;
+	IQueue queue;
 public:
 	Sender();
 	~Sender();
-	send(Product*, queue&, Receiver& )
+	send(Product*, queue&, Receiver& );
 };
 
