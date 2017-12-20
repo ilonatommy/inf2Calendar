@@ -4,6 +4,7 @@
 
 Product::Product()
 {
+  productCounter = 0;
 }
 
 
