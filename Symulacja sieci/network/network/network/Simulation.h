@@ -1,8 +1,7 @@
 #pragma once
 //file handling libs:
+#include <iostream>
 #include <fstream>
-#include <sstream>
-#include <string>
 
 class Simulation
 {
