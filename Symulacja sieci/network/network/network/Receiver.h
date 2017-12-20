@@ -7,6 +7,6 @@ public:
 	receivePackage(Product* );
 	view();
 	NodeType getReceiverType();
-	int getID;
+	int getID();
 };
 
