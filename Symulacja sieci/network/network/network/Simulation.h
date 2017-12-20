@@ -1,12 +1,13 @@
 #pragma once
 //file handling libs:
-#include <iostream>
 #include <fstream>
+#include <sstream>
+#include <string>
 
 class Simulation
 {
 public:
-	Simulation();
+	Simulation(std::ostringstream & stream); //strumień pochodzi z funkcji readFile z Global
 	~Simulation();
 	
 	bool isNetCorrect();
