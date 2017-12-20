@@ -13,4 +13,7 @@ enum class NodeType{
 Worker,
 Ramp
 }
+
+std::ostringstream & readFile();
+
 #endif
