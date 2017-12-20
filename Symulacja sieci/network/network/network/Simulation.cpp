@@ -16,12 +16,15 @@ bool isNetCorrect()
 	
 std::vector<Ramp> getRamps()
 {
+	return this.ramps;
 }
 std::vector<Storehouse> getStorehouses()
 {
+	return this.storehouses;
 }
 std::vector<Worker> getWorkers()
 {
+	return this.workers;
 }
 	
 void addRamp(Ramp ramp)
