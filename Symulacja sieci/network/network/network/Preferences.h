@@ -2,9 +2,11 @@
 class Preferences
 {
 private:
-	std::unordered_map<std::pair<int,int>, double>
+	std::unordered_map<Receiver* , double> probabilities;
 public:
-	Preferences();
-	~Preferences();
+	std::unordered_map<Receiver* ,double> getProbabilities();
+	setProbabilities(std::unordered_map<Receiver* , double>);
+	addReceiver(Receiver* );
+	addReceiverWithProbabilities(Receiver* ,double)
 };
 
