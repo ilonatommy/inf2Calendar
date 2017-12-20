@@ -1,7 +1,7 @@
-#ifndef TYPES_HPP
-#define TYPES_HPP
-typedef unsigned int Time;
-typedef unsigned int TimeOffset;
+#ifndef GLOBAL_HPP
+#define GLOBAL_HPP
+typedef int Time;
+typedef int TimeOffset;
 
 
 enum class QueueType{
