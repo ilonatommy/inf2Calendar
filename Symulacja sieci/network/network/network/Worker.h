@@ -9,6 +9,6 @@ private:
 public:
 	Worker(ID, TimeOffset, Time, IQueue*);
 	void receive_product(Product);
-	void view_depot()
+	void displayQueue()
 };
 
