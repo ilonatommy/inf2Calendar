@@ -4,6 +4,7 @@
 
 Sender::Sender()
 {
+  //receiverPreferences z pliku
 }
 
 
