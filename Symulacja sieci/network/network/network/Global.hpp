@@ -14,6 +14,6 @@ Worker,
 Ramp
 }
 
-std::ostringstream & readFile(FILE* file);
+std::ostringstream & readFile(std::ifstream& );
 
 #endif
