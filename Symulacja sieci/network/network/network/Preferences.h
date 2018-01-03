@@ -9,6 +9,8 @@ public:
 	addReceiver(Receiver* );
 	addReceiverWithProbabilities(Receiver* ,double);
 	//getReceiver(Receiver* );
+	void removeReceiver(Receiver* );
+	Reeceiver* drawReceiver();
 	pair<Receiver* , double> view();
 };
 
