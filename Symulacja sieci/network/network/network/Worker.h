@@ -5,9 +5,9 @@ private:
 	Time processingStartTime;
 	TimeOffset processingDuration 
 	ID id;
-	QueueType* queue;
+ 	IQueue* queue;
 public:
-	Worker(ID, TimeOffset, Time, QueueType*);
+	Worker(ID, TimeOffset, Time, IQueue*);
 	void receive_product(Product);
 	void view_depot()
 };
