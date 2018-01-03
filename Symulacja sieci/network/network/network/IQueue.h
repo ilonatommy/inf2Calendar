@@ -9,7 +9,7 @@ private:
 public:
 	IQueue(QueueType);
 	virtual create()=0;
-	push(Product);
+	void push(Product);
 	Product pop();
 	bool isEmpty();
 	Product[] view();
