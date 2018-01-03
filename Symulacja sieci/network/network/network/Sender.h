@@ -2,11 +2,13 @@
 class Sender
 {
 private:
-	QueueType queue_type ;
-	IQueue queue;
+	Preferences receiverPreferences;
+	std::vector<Product> sendingBuffer;
 public:
-	Sender();
-	~Sender();
-	send(Product*, queue&, Receiver& );
+	Sender(ID);
+	Preferences get_receiverPreferences();
+	set_receiverPreferences(Preferences);
+	void sendProduct();
+	std::vector<Product> get_sendingBuffer();
 };
 
