@@ -1,15 +1,19 @@
 #pragma once
 class IQueue
 {
+private:
+	QueueType _queueType;
+	std::dequeue<Product> _dequeue;
+	std::function<Product()> popFunction;
+	
 public:
-	IQueue();
-	~IQueue();
+	IQueue(QueueType);
 	virtual create()=0;
-	push(Package& );
-	pop();
+	push(Product);
+	Product pop();
 	bool isEmpty();
-	view();
+	Product[] view();
 	QueueType getQueueType();
-	int size();
+	bool size();
 };
 
