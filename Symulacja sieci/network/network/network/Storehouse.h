@@ -3,9 +3,11 @@ class Storehouse
 {
 private:
 	std::vector<Product&> list_of_product
-	int ID
+	ID elemenID;
 public:
-	Storehouse();
-	~Storehouse();
+	Storehouse(ID);
+	void receivePackage(Package);
+	ID getID();
+	std::vector<Product&> view();
 };
 
