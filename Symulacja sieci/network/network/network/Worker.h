@@ -4,7 +4,7 @@ class Worker
 private:
 	Time time_of_processing;
 	TimeOffset processing_duration; 
-	ID;
+	ID id;
 	QueueType* queue_type;
 public:
 	Worker(ID, TimeOffset, QueueType* );
