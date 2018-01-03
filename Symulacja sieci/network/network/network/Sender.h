@@ -5,7 +5,7 @@ private:
 	Preferences receiverPreferences;
 	std::vector<Product> sendingBuffer;
 public:
-	Sender(ID);
+	Sender(Preferences);
 	Preferences get_receiverPreferences();
 	set_receiverPreferences(Preferences);
 	void sendProduct();
