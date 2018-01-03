@@ -2,8 +2,9 @@
 class Worker
 {
 private:
-	enum Time time_of_processing
-	int ID
+	Time time_of_processing;
+	Time
+	int ID;
 public:
 	Worker();
 	~Worker();
