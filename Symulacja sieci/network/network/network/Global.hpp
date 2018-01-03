@@ -2,6 +2,7 @@
 #define GLOBAL_HPP
 typedef int Time;
 typedef int TimeOffset;
+typedef int ID;
 
 
 enum class QueueType{
