@@ -2,11 +2,12 @@
 class Ramp
 {
 private:
-	enum Time frequency
-	int ID
+	TimeOffset deliveryInterval;
+	ID elemenID;
 public:
-	Ramp();
-	~Ramp();
-	createProduct();
+	Ramp(ID, TimeOffset);
+	deliverGoods(Time);
+	TimeOffset get_deliveryInterval();
+	ID getID();
 };
 
