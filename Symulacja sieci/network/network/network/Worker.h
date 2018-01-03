@@ -2,13 +2,13 @@
 class Worker
 {
 private:
-	Time time_of_processing;
-	TimeOffset processing_duration; 
+	Time processingStartTime;
+	TimeOffset processingDuration 
 	ID id;
-	QueueType* queue_type;
+	QueueType* queue;
 public:
-	Worker(ID, TimeOffset, QueueType* );
-	receive_product(Product);
-	view_depot()
+	Worker(ID, TimeOffset, Time, QueueType*);
+	void receive_product(Product);
+	void view_depot()
 };
 
