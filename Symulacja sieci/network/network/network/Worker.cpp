@@ -2,12 +2,12 @@
 #include "Worker.h"
 
 
-Worker::Worker(ID _id, TimeOffset _time, QueueType* _queue)
+Worker::Worker(ID _id, TimeOffset _processingDuration, Time _processingStartTime,QueueType* _queueType)
 {
-  (*this).time_of_processing = ? 
-	(*this).processing_duration = _time; 
+  	(*this).processingStartTime = _processingStartTime; 
+	(*this).processingDuration = _processingDuration; 
 	(*this).id = _id;
-  (*this).queue_type = _queue;
+  	(*this).queueType = _queueType;
 }
 
 
