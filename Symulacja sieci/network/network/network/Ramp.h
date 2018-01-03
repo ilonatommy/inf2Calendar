@@ -3,10 +3,10 @@ class Ramp
 {
 private:
 	TimeOffset deliveryInterval;
-	ID elemenID;
+	ID id;
 public:
 	Ramp(ID, TimeOffset);
-	deliverGoods(Time);
+	void deliverGoods(Time);
 	TimeOffset get_deliveryInterval();
 	ID getID();
 };
