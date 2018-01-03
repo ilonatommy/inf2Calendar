@@ -2,8 +2,6 @@
 class Report
 {
 public:
-	Report();
-	~Report();
-	makeReport(ostream&)
+	bool shouldGenerateReport(Time);
 };
 
