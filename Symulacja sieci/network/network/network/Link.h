@@ -4,8 +4,8 @@ class Link
 private:
 	int nodeID;
 	int destID;
-	NodeType src_type;
-	NodeType dest_type;
+	NodeType srcType;
+	NodeType destType;
 	Preferences probability;
 public:
 	Link(Sender&, Receiver&);
