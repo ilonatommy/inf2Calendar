@@ -1,5 +1,5 @@
 #pragma once
-class LIFO
+class LIFO:public Iqueue
 {
 public:
 	LIFO();
