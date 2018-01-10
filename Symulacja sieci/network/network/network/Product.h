@@ -2,7 +2,7 @@
 class Product
 {
 private:
-	int ID
+	ID _id;
 	int productCounter;
 public:
 	Product();
