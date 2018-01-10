@@ -8,7 +8,7 @@ private:
 	NodeType destType;
 	Preferences probability;
 public:
-	Link(Sender&, Receiver&);
+	Link(const Sender& S,const Receiver& R);
 	~Link();
 };
 
