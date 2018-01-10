@@ -10,7 +10,7 @@ Storehouse::Storehouse(ID =_id)
 
 void::Storehouse receive_package(Package)
 {
-  (*this).list_of_product.push-back(Package);
+  (*this).list_of_product.push_back(Package);
 }
 
 ID Storehouse::getID(){return (*this).elemenID}
