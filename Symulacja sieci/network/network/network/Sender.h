@@ -4,11 +4,13 @@ class Sender
 private:
 	Preferences receiverPreferences;
 	std::vector<Product> sendingBuffer;
+	NodeType type;
 public:
 	Sender(Preferences);
 	Preferences getReceiverPreferences();
 	setReceiverPreferences(Preferences);
 	void sendProduct(Receiver);
 	std::vector<Product> getSendingBuffer();
+	NodeType getType(return (*this).type)
 };
 
