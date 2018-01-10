@@ -11,6 +11,6 @@ public:
 	setReceiverPreferences(Preferences);
 	void sendProduct(Receiver);
 	std::vector<Product> getSendingBuffer();
-	NodeType getType(return (*this).type)
+	NodeType getSenderType(return (*this).type)
 };
 
