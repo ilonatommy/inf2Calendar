@@ -1,5 +1,5 @@
 #pragma once
-class Worker: public Sender
+class Worker: public Sender, publicReceiver
 {
 private:
 	Time processingStartTime;
