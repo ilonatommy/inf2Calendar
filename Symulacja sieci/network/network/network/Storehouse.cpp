@@ -4,20 +4,20 @@
 
 Storehouse::Storehouse(ID =_id)
 {
- list_of_product=std::vector<Product> vec;
+ listOfProduct=std::vector<Product> vec;
  elemID=_id;
 }
 
-void::Storehouse receive_package(Package)
+void::Storehouse receivePackage(Package)
 {
-  (*this).list_of_product.push_back(Package);
+  (*this).listofProduct.push_back(Package);
 }
 
 ID Storehouse::getID(){return (*this).elemenID}
 
 void Storehouse::view()
 {
- for(auto i:(*this).list_of_product)
+ for(auto i:(*this).listOfProduct)
  {
    std::cout<<i<<std::endl;
  }
