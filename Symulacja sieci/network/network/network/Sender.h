@@ -6,9 +6,9 @@ private:
 	std::vector<Product> sendingBuffer;
 public:
 	Sender(Preferences);
-	Preferences get_receiverPreferences();
-	set_receiverPreferences(Preferences);
-	void sendProduct();
-	std::vector<Product> get_sendingBuffer();
+	Preferences getReceiverPreferences();
+	setReceiverPreferences(Preferences);
+	void sendProduct(Receiver);
+	std::vector<Product> getSendingBuffer();
 };
 
