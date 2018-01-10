@@ -1,5 +1,5 @@
 #pragma once
-class Ramp
+class Ramp:public Sender
 {
 private:
 	TimeOffset deliveryInterval;
