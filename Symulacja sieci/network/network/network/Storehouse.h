@@ -6,8 +6,8 @@ private:
 	ID elemenID;
 public:
 	Storehouse(ID);
-	void receivePackage(Package);
+	void receive_package(Product);
 	ID getID();
-	std::vector<Product&> view();
+	std::vector<Product> view();
 };
 
