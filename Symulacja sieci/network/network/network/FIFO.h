@@ -1,5 +1,5 @@
 #pragma once
-class FIFO
+class FIFO:public Iqueue
 {
 public:
 	FIFO();
