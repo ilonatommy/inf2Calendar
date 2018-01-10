@@ -3,8 +3,9 @@ class IQueue
 {
 private:
 	QueueType _queueType;
-	std::dequeue<Product> _dequeue;
+	std::deque<Product> _deque;
 	std::function<Product()> popFunction;
+	queue
 	
 public:
 	IQueue(QueueType);
