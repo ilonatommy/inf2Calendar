@@ -10,3 +10,8 @@ Receiver::Receiver()
 Receiver::~Receiver()
 {
 }
+
+NodeType getReceiverType()
+{
+  
+}
