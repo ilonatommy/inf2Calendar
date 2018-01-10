@@ -2,8 +2,8 @@
 class Link
 {
 private:
-	int nodeID;
-	int destID;
+	ID nodeID;
+	ID destID;
 	NodeType srcType;
 	NodeType destType;
 	Preferences probability;
