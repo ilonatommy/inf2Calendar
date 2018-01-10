@@ -1,5 +1,5 @@
 #pragma once
-class ReportSimulation
+class ReportSimulation:public IReport
 {
 public:
 	ReportSimulation();
